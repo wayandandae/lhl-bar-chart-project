@@ -1,0 +1,9 @@
+# Ignore plugin wrapper conflicting with ESLint
+src/jQueryPlugin.js
+src/app.js
+
+# Ignore base files
+.editorconfig
+.eslintrc.js
+.gitignore
+package.json

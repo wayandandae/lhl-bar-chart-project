@@ -5,3 +5,19 @@ body {
 ul {
   font-family: helvetica;
 }
+
+#barchart {
+  position: relative;
+  width: 1200px;
+  height: 800px;
+  background-color: #ffff;
+  z-index: auto;
+}
+
+#barexample {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  background-color: #ffff;
+  z-index: auto;
+}
