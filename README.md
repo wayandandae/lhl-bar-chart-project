@@ -4,6 +4,9 @@
 Bar Chart Project is a JavaScript program using jQuery which takes user input of numbers and display them as a chart. User can tweak several options to change the visuals.
 
 ### Example Screenshots (embedded within the readme as image tags)
+<img src="/src/demo1.png" alt="drawing" width="800"/>
+<img src="/src/demo2.png" alt="drawing" width="800"/>
+<img src="/src/demo3.png" alt="drawing" width="800"/>
 
 ### API Function for User
 drawBarChart(data, options, element)
@@ -28,6 +31,8 @@ drawBarChart(data, options, element)
 - Customizable title text
 
 ### Known Issues / Bugs
+- Bars of different data sets not coloured accordingly.
+- No $document.ready() implementation.
 
 ### Features on the Roadmap but Not Implemented Yet
 - Data label placement options: User can choose which part of the bars (top, centre, bottom) to display data labels. By default, data labels are rendered at the top of the bars.
