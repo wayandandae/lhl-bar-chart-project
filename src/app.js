@@ -36,11 +36,11 @@ function $setParameter() {
     barLineWidth: $("#barlinewidth").val() || "1",
     barLineColour: $("#barlinecolour").val() || "black",
     labelPosition: $("#labelposition").val(),
-    labelColour: $("#labelcolour").val() || "purple",
+    labelColour: $("#labelcolour").val() || "black",
     axisWidth: $("#axiswidth").val() || "1",
-    axisColour: $("#axiscolour").val() || "red",
+    axisColour: $("#axiscolour").val() || "black",
     titleText: $("#titletext").val() || "Bar Chart by Jack Kang",
-    titleSize: $("#titlesize").val() || "25",
+    titleSize: $("#titlesize").val() || "20",
     titleColour: $("#titlecolour").val() || "blue"
   };
 
@@ -222,10 +222,6 @@ function $drawBars(data, options, canvasProps) {
   barSpace = barSpace || canvasWidth / (xAxisMax(data) * 2 + 1);
   barWidth = barWidth || (xAxisLength - (xAxisMax(data) + 1) * barSpace) / xAxisMax(data);
   barHeight = barHeight || yAxisLength / Math.round(yAxisMax(data) * 1.25);
-  // barLineWidth = barLineWidth || "1";
-  // barLineColour = barLineColour || "black";
-  // labelSize = labelSize || "10";
-  // labelColour = labelColour || "black";
 
   if (!isOutOfBounds(data, options, canvasWidth)) {
     const yBaseValue = [];
@@ -247,7 +243,7 @@ function $drawBars(data, options, canvasProps) {
         );
         i === 0 &&
           $addLabel(
-            {x: padding - 20 + (j + 0.5) * barWidth + (j + 1) * barSpace,
+            {x: padding - 15 + (j + 0.5) * barWidth + (j + 1) * barSpace,
               y: canvasHeight - padding + 5},
             `Entry ${j + 1}`,
             { color: labelColour, fontSize: labelSize }
